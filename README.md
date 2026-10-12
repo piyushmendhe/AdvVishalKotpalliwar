@@ -13,7 +13,7 @@ One-page static site: plain HTML, CSS and JavaScript, no build step.
 ## Preview locally
 
 ```bash
-python3 -m http.server 4173
+python3 tools/serve.py
 ```
 
 Then open http://localhost:4173.

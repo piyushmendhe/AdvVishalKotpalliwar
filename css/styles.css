@@ -97,7 +97,6 @@ a { color: inherit; }
 .hero::before {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background:
-    radial-gradient(26rem 18rem at 100% 0%, rgba(11, 22, 34, 0.8), transparent 75%),
     linear-gradient(180deg, rgba(11, 22, 34, 0.8) 0%, rgba(11, 22, 34, 0.15) 30%, rgba(11, 22, 34, 0.15) 100%),
     linear-gradient(90deg, rgba(11, 22, 34, 0.85) 0%, rgba(11, 22, 34, 0.5) 42%, transparent 62%);
 }
@@ -110,9 +109,6 @@ a { color: inherit; }
 .hero h1 span { display: block; }
 .hero__lede { max-width: 28rem; font-size: 1.02rem; color: var(--on-dark); opacity: 0.92; }
 .hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; margin-top: 0.55rem; }
-/* sits over the bookshelf: placed from the hero's right edge, like the photo, so it never drifts onto his face */
-.hero__quote { position: absolute; top: 22%; right: clamp(1.5rem, 5vw, 5.5rem); font-family: var(--serif); font-size: 1.3rem; line-height: 1.4; text-shadow: 0 1px 0.9rem rgba(11, 22, 34, 0.85); }
-.hero__quote::after { content: ""; display: block; width: 1.9rem; height: 2px; margin-top: 0.8rem; background: var(--copper-bright); }
 
 /* stats */
 .stats { background: var(--paper-2); }
@@ -199,6 +195,7 @@ a { color: inherit; }
 .contact__list strong, .contact__list a { display: block; font-size: 0.8rem; font-weight: 600; line-height: 1.4; text-decoration: none; white-space: nowrap; }
 .contact__list a { padding-block: 0.6rem; margin-block: -0.6rem; }
 .contact__list a:hover { color: var(--copper-text); text-decoration: underline; }
+.contact__list a.directions { margin-block: 0.15rem 0; padding-block: 0.3rem; color: var(--copper-text); text-decoration: underline; text-underline-offset: 0.15em; }
 .contact__list span a { display: inline; padding: 0; margin: 0; font-size: inherit; white-space: normal; text-decoration: underline; text-underline-offset: 0.15em; }
 .contact__list span { display: block; max-width: 11rem; margin-top: 0.2rem; font-size: 0.75rem; line-height: 1.45; color: var(--ink-soft); }
 
@@ -231,7 +228,6 @@ a { color: inherit; }
   .experience__photo { left: -5%; top: -6%; height: 115%; }
 }
 @media (max-width: 1180px) {
-  .hero__quote { display: none; }
   .hero h1 { font-size: clamp(3rem, 7vw, 4.5rem); }
   .hero__lede { max-width: 24rem; }
   .nav { gap: 1.25rem; }
@@ -254,7 +250,7 @@ a { color: inherit; }
   .hero__text { max-width: none; padding-bottom: 1.75rem; }
   .hero__lede { max-width: 34rem; }
   .hero__photo {
-    position: static; display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: 75% center; transform: none;
+    position: static; display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: 85% center; transform: none;
     -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 24%);
     mask-image: linear-gradient(180deg, transparent 0, #000 24%);
   }

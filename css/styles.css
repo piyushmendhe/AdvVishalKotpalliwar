@@ -123,7 +123,7 @@ a { color: inherit; }
 /* clients */
 .clients { padding-block: 1.75rem 2.4rem; }
 .clients__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 0.75rem 2rem; }
-.clients__head .eyebrow { max-width: 19rem; }
+.clients__head .eyebrow { max-width: 34rem; }
 .clients__head p:last-child { font-size: 0.66rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; }
 .logos { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; row-gap: 1.1rem; margin-top: 1.4rem; }
 .logos li { flex: 0 0 calc(100% / 6); display: grid; align-content: center; justify-items: center; gap: 0.15rem; min-height: 3.4rem; padding: 0.3rem clamp(0.6rem, 1.8vw, 2.2rem); border-left: 1px solid var(--line); text-align: center; }

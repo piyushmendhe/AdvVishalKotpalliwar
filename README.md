@@ -18,6 +18,12 @@ python3 tools/serve.py
 
 Then open http://localhost:4173.
 
+To open it on a phone on the same Wi-Fi, start it with `--lan` and visit `http://<this computer's IP>:4173`:
+
+```bash
+python3 tools/serve.py 4173 --lan
+```
+
 ## Before launch
 
 - [ ] Google Form link for "Consult Now" and "Get a Consultation" (both point to `#contact` for now)

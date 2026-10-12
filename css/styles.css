@@ -110,7 +110,8 @@ a { color: inherit; }
 .hero h1 span { display: block; }
 .hero__lede { max-width: 28rem; font-size: 1.02rem; color: var(--on-dark); opacity: 0.92; }
 .hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; margin-top: 0.55rem; }
-.hero__quote { position: absolute; top: 7.75rem; right: var(--gutter); font-family: var(--serif); font-size: 1.3rem; line-height: 1.4; text-shadow: 0 1px 0.9rem rgba(11, 22, 34, 0.85); }
+/* sits over the bookshelf: placed from the hero's right edge, like the photo, so it never drifts onto his face */
+.hero__quote { position: absolute; top: 22%; right: clamp(1.5rem, 5vw, 5.5rem); font-family: var(--serif); font-size: 1.3rem; line-height: 1.4; text-shadow: 0 1px 0.9rem rgba(11, 22, 34, 0.85); }
 .hero__quote::after { content: ""; display: block; width: 1.9rem; height: 2px; margin-top: 0.8rem; background: var(--copper-bright); }
 
 /* stats */
@@ -118,7 +119,7 @@ a { color: inherit; }
 .stats ul { list-style: none; padding-block: 1.5rem; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .stats li { padding: 0.35rem 1rem 0.45rem clamp(1rem, 4.5vw, 3.75rem); border-left: 1px solid var(--line); }
 .stats li:first-child { border-left: 0; }
-.stats strong { display: block; font-family: var(--serif); font-weight: 500; font-size: clamp(2.2rem, 4vw, 2.9rem); line-height: 1; color: var(--copper-text); }
+.stats strong { display: block; font-family: var(--serif); font-weight: 500; font-size: clamp(2.2rem, 4vw, 2.9rem); line-height: 1; color: var(--copper-text); font-variant-numeric: lining-nums tabular-nums; }
 .stats span { display: block; max-width: 8.5rem; margin-top: 0.7rem; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.2em; line-height: 1.65; text-transform: uppercase; }
 
 /* clients */
@@ -137,13 +138,12 @@ a { color: inherit; }
 .practice { position: relative; isolation: isolate; background: var(--navy-900); color: var(--on-dark); padding-block: clamp(2.5rem, 6vw, 3.75rem); }
 .practice::before { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(50rem 26rem at 85% 0%, rgba(40, 80, 110, 0.4), transparent 70%); }
 .practice h2 { margin-top: 0.85rem; font-size: clamp(1.9rem, 3.6vw, 2.6rem); }
-.areas { list-style: none; padding: 0; margin-top: 2rem; display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 0.7rem; }
-.area { grid-column: span 2; display: flex; flex-direction: column; gap: 0.5rem; padding: 1.15rem 1.1rem 1.25rem; background: var(--card); border: 1px solid var(--card-line); border-radius: 4px; }
-.area .icon { width: 2.3rem; height: 2.3rem; margin-bottom: 0.35rem; color: var(--copper-bright); stroke-width: 1.25; }
+.areas { list-style: none; padding: 0; margin-top: 2rem; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.9rem; }
+.area { display: flex; flex-direction: column; overflow: hidden; background: var(--card); border: 1px solid var(--card-line); border-radius: 4px; }
+.area__img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.area > div { display: grid; gap: 0.45rem; align-content: start; padding: 1rem 1.1rem 1.2rem; }
 .area h3 { font-family: var(--sans); font-size: 0.95rem; font-weight: 600; line-height: 1.3; }
 .area p { font-size: 0.8rem; line-height: 1.5; color: var(--on-dark-soft); }
-.area > div { display: grid; gap: 0.5rem; align-content: start; }
-.area--wide { grid-column: span 3; flex-direction: row; gap: 1rem; }
 
 /* about */
 .about { padding-block: clamp(2.5rem, 6vw, 3.5rem); }
@@ -176,7 +176,7 @@ a { color: inherit; }
 .books .icon { position: absolute; right: 9%; top: 10%; width: 30%; height: auto; color: rgba(236, 190, 142, 0.6); stroke-width: 0.7; }
 .tenure { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .tenure div + div { padding-left: clamp(1rem, 3vw, 2.25rem); border-left: 1px solid var(--line); }
-.tenure strong { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.95rem; line-height: 1.15; color: var(--copper-text); }
+.tenure strong { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.95rem; line-height: 1.15; color: var(--copper-text); font-variant-numeric: lining-nums; }
 .tenure strong small { font-size: 1.15rem; }
 .tenure span { display: block; max-width: 11rem; font-size: 0.92rem; line-height: 1.45; }
 
@@ -194,7 +194,7 @@ a { color: inherit; }
 .experience p strong { font-weight: 700; }
 .figures { display: grid; grid-template-columns: repeat(3, auto); }
 .figures div { padding-inline: clamp(1rem, 2vw, 1.75rem); border-left: 1px solid var(--navy-700); text-align: center; }
-.figures strong { display: block; font-family: var(--serif); font-weight: 500; font-size: 2.4rem; line-height: 1.1; color: var(--copper-bright); }
+.figures strong { display: block; font-family: var(--serif); font-weight: 500; font-size: 2.4rem; line-height: 1.1; color: var(--copper-bright); font-variant-numeric: lining-nums; }
 .figures span { display: block; margin-top: 0.4rem; font-size: 0.8rem; line-height: 1.35; }
 
 /* contact */
@@ -253,8 +253,7 @@ a { color: inherit; }
     -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 24%);
     mask-image: linear-gradient(180deg, transparent 0, #000 24%);
   }
-  .areas { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-  .area--wide { grid-column: span 2; flex-direction: column; gap: 0.5rem; }
+  .areas { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .logos, .logos + .logos { grid-template-columns: repeat(3, minmax(0, 1fr)); justify-content: normal; }
   .logos li { border-left: 0; }
   .experience__body { grid-template-columns: minmax(0, 1fr); }
@@ -284,9 +283,10 @@ a { color: inherit; }
   .hero .wrap { padding-top: 6.5rem; }
   .logos, .logos + .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .logos strong { font-size: 1.2rem; }
-  .areas { grid-template-columns: minmax(0, 1fr); }
-  .area, .area--wide { grid-column: auto; flex-direction: row; gap: 1rem; }
-  .area .icon { width: 2rem; height: 2rem; margin-bottom: 0; }
+  .areas { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
+  .area > div { padding: 0.8rem 0.8rem 1rem; }
+  .area h3 { font-size: 0.88rem; }
+  .area p { font-size: 0.76rem; }
   .features { grid-template-columns: minmax(0, 1fr); }
   .features li { padding-inline: 0; border-left: 0; }
   .features li br { display: none; }

@@ -7,7 +7,7 @@ One-page static site: plain HTML, CSS and JavaScript, no build step.
 - `index.html` – the page
 - `css/styles.css` – all styling
 - `js/main.js` – mobile menu, nav highlight, disclaimer
-- `assets/` – cover photo, signature logo and site icon
+- `assets/` – cover photo, signature logo, site icon and the practice-area photos
 - `404.html` – not-found page
 
 ## Preview locally

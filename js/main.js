@@ -48,7 +48,9 @@
     returnTo = from || null;
     gate.hidden = false;
     document.documentElement.classList.add('gated');
-    agree.focus();
+    // on short screens the card is taller than the viewport: start at its top, not at the button
+    agree.focus({ preventScroll: true });
+    gate.scrollTop = 0;
   }
   function closeGate() {
     gate.hidden = true;

@@ -23,6 +23,7 @@ Then open http://localhost:4173.
 - [ ] Google Form link for "Consult Now" and "Get a Consultation" (both point to `#contact` for now)
 - [ ] Phone / WhatsApp number (shows `+91 XXXXX XXXXX`)
 - [ ] Confirm the "100+ clients" and "95% client satisfaction" figures
-- [ ] Logo files for the ten institutions, with permission to use them (names are text for now)
+- [ ] Logo files for SECR, NHAI, NH PWD and Reliance Retail, from the organisations themselves (names are text for now)
+- [ ] Confirm the advocate is entitled to show the six bank and BHEL logos (trademarks; files are from Wikimedia Commons)
 - [ ] About-section photograph and court building photograph (stand-in artwork for now)
 - [ ] Domain name, then add the canonical URL, sharing image and sitemap

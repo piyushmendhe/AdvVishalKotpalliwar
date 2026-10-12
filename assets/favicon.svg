@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#0B1622"/>
+  <text x="31" y="45" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" letter-spacing="-3" fill="#F4F1EC">VK</text>
+  <rect x="20" y="52" width="24" height="2.5" fill="#D08A57"/>
+</svg>

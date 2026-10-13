@@ -31,3 +31,4 @@ python3 tools/serve.py 4173 --lan
 - [ ] Confirm the advocate is entitled to show the six bank and BHEL logos (trademarks; files are from Wikimedia Commons)
 - [ ] Confirm the right to use the About-section picture; it is small (619 px wide) and appears to come from another website
 - [ ] Domain name, then add the canonical URL, sharing image and sitemap
+- [ ] Confirm the one-line description under IPR & Trade Marks

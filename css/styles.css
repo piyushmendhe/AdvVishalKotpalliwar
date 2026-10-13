@@ -140,8 +140,6 @@ a { color: inherit; }
 .areas { list-style: none; padding: 0; margin-top: 2rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.9rem; }
 .area { flex: 0 0 calc((100% - 2.7rem) / 4 - 0.1px); display: flex; flex-direction: column; overflow: hidden; background: var(--card); border: 1px solid var(--card-line); border-radius: 4px; }
 .area__img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
-.area__img--blank { position: relative; background: linear-gradient(135deg, var(--navy-800), var(--navy-950)); color: var(--copper-bright); }
-.area__img--blank .icon { position: absolute; inset: 0; margin: auto; width: 3.25rem; height: 3.25rem; stroke-width: 1.1; }
 .area > div { display: grid; gap: 0.45rem; align-content: start; padding: 1rem 1.1rem 1.2rem; }
 .area h3 { font-family: var(--sans); font-size: 0.95rem; font-weight: 600; line-height: 1.3; }
 .area p { font-size: 0.8rem; line-height: 1.5; color: var(--on-dark-soft); }
